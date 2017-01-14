@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Royal Canin</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav id="header-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!--Utility nav -->
+    <div class="container-fluid hidden-xs utility-nav">
+        <div class="container">
+            <ul class="utility-nav-lg nav navbar-nav navbar-right">
+                <li><a href='#' target='_blank'>BLOG</a></li>
+                <li><a href='#' target='_blank'
+                       title='SIGN UP FOR NEWSLETTER'>SIGN UP FOR NEWSLETTER</a></li>
+                <li><a href='#' title='NEWSROOM'>NEWSROOM</a></li>
+                <li><a href='#' target='_top'>CAREERS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid primary-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggle-menu menu-right push-body" data-toggle="collapse"
+                        data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span id="nav-bars">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+
+                    <img src="/assets/images/search-icon.gif" class="float-left" alt=""/>
+                </button>
+
+                <a href='/' class='navbar-brand'>
+                    <img src='/assets/images/logo.png' class='float-left' alt='Royal Canin Logo'/>
+                </a>
+                <form id="hdr-search" onsubmit="return validateEmpty(this.q)" action="/search-results"
+                      class="search-box-sm form-inline visible-xs" method="GET" role="search">
+                    <div class="form-group input-group">
+                        <input type="search" name="q" class="form-control" placeholder="Search Royal Canin..."/>
+                        <span class="input-group-btn">
+                        <input type="submit" class="hl-more-button"/>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="navbar-collapse">
+                <div id="toggle-search" class="hidden-xs" style="display: none;">
+                    <form id="hdr-search2" onsubmit="return validateEmpty(this.q)" action="/search-results"
+                          class="search-box-lg form-inline float-right" method="GET" role="search">
+                        <div class="form-group input-group">
+                            <input type="search" class="form-control" name="q" placeholder="Search Royal Canin..."/>
+                            <span class="input-group-btn">
+                                <a href="#" onclick="javascript:return false;" class="btn-search-clear"></a>
+                            </span>
+                            <span class="input-group-btn">
+                                <input type="submit" class="hl-more-button"/>
+                            </span>
+                        </div>
+                    </form>
+                    <a class="toggle-search-btn float-right" href="#" onclick="javascript:return false;">CLOSE</a>
+                </div>
+                <ul class="primary-nav-sm nav navbar-nav navbar-right">
+                    <li><a href='/products'>PRODUCTS</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='/assets/images/mm-featured-cat-dog.jpg'
+                                     alt='dog and cat next to bags of food'/>
+                                <h5 class="red">Our Products</h5>
+                                <p>
+                                    At Royal Canin, we believe the secret to providing cats and dogs with the best
+                                    nutrition lies not in any passing fad, but in well-researched scientific fact.<br/>
+                                </p>
+                                <a href='/products' class='hl-more-red'>
+                                    LEARN MORE <span class="arrow"></span>
+                                </a>
+                            </div>
+                            <div class="mm-content">
+                                <div class="product-selector">
+                                    <div class="active dog">
+                                        <a href="#">DOGS</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="#">CATS</a>
+                                    </div>
+                                    <div class="vet">
+                                        <a href="#">VETS</a>
+                                    </div>
+                                </div>
+
+                                <div id="product-filter-wrapper">
+
+                                    <div class="product-filters active dog">
+                                        <select name="MegaMenuCategoryFilter_dogfood0"
+                                                id="MegaMenuCategoryFilter_dogfood0"
+                                                class="MegaMenuCategoryFilter_dogfood">
+                                            <option value="-">SELECT BREED...</option>
+                                            <option value="9255ff90-3945-44fb-be01-a46500f2473c">BEAGLE</option>
+                                            <option value="f283bed5-126f-4e00-8f4f-a46500f24738">BOXER</option>
+                                            <option value="bb3d666c-83bc-45e1-b34c-a46500f24738">BULLDOG</option>
+                                            <option value="244788de-fb87-4fc5-981f-a46500f24738">CHIHUAHUA</option>
+                                            <option value="be18e746-b77f-4f5f-a8a1-a46500f24738">COCKER SPANIEL</option>
+                                            <option value="ca972774-9fbf-4635-9599-a46500f24733">DACHSHUND</option>
+                                            <option value="1897a06e-0a13-492c-8d50-a46500f24733">FRENCH BULLDOG</option>
+                                            <option value="b666dcbf-65d7-450b-9006-a46500f24733">GERMAN SHEPHERD
+                                            </option>
+                                            <option value="c5daf93f-b7b2-4a1f-a1c9-a46500f24733">GOLDEN RETRIEVER
+                                            </option>
+                                            <option value="36b0af75-90a7-48c0-9659-a46500f2472e">LABRADOR RETRIEVER
+                                            </option>
+                                            <option value="d19d14e6-79b0-4add-84e3-a46500f2472e">MINIATURE SCHNAUZER
+                                            </option>
+                                            <option value="419c19a6-e638-4ca6-aecd-a46500f2472e">POODLE</option>
+                                            <option value="935d37ad-1c09-4663-a96a-a46500f2472e">PUG</option>
+                                            <option value="84bccbe5-54eb-4ba1-9cf1-a46500f24729">ROTTWEILER</option>
+                                            <option value="b7a1ca5e-b81c-44d3-b1b0-a46500f24729">SHIH TZU</option>
+                                            <option value="49c51527-7253-4cab-878b-a46500f24729">WEST HIGHLAND WHITE
+                                                TERRIER
+                                            </option>
+                                            <option value="49ac7e88-7f4f-484c-9278-a46500f24729">YORKSHIRE TERRIER
+                                            </option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_dogfood1"
+                                                id="MegaMenuCategoryFilter_dogfood1"
+                                                class="MegaMenuCategoryFilter_dogfood">
+                                            <option value="-">SELECT SIZE...</option>
+                                            <option value="80db6f01-d141-45d0-9045-a4650102b58e">X-SMALL</option>
+                                            <option value="ec2fd01e-93b2-4746-864b-a4650102b58e">SMALL</option>
+                                            <option value="badcc482-a175-4d94-a2aa-a4650102b58e">MEDIUM</option>
+                                            <option value="35510766-6555-4b48-bf51-a4650102b58a">LARGE</option>
+                                            <option value="ef3388fc-e133-4422-82d9-a4650102b58a">GIANT</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_dogfood2"
+                                                id="MegaMenuCategoryFilter_dogfood2"
+                                                class="MegaMenuCategoryFilter_dogfood">
+                                            <option value="-">SELECT AGE...</option>
+                                            <option value="7c8b7fd8-0b44-4540-9336-a46501049615">PUPPY</option>
+                                            <option value="2f1f0aec-3389-4318-be71-a46501049615">ADULT</option>
+                                            <option value="68fddd41-22b0-4f02-9c15-a46501049610">SENIOR</option>
+                                        </select>
+
+                                        <a id="MegaMenuCategoryFilter_dogfood" href="#" class="hl-more-button"
+                                           onclick="RedirectToProductSearch('MegaMenuCategoryFilter_dogfood', 'DogFood', '/products')">FIND
+                                            PRODUCTS<span class="arrow"></span></a>
+                                    </div>
+
+
+                                    <div class="product-filters  cat">
+                                        <select name="MegaMenuCategoryFilter_catfood0"
+                                                id="MegaMenuCategoryFilter_catfood0"
+                                                class="MegaMenuCategoryFilter_catfood">
+                                            <option value="-">SELECT CAT AGE...</option>
+                                            <option value="1c594f5a-0f4c-4564-b9db-a47601062e65">KITTEN</option>
+                                            <option value="165728be-024c-4a16-8aef-a47601062e6a">ADULT</option>
+                                            <option value="14570a02-461d-4fad-b1db-a47601062e5b">SENIOR</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_catfood1"
+                                                id="MegaMenuCategoryFilter_catfood1"
+                                                class="MegaMenuCategoryFilter_catfood">
+                                            <option value="-">SELECT BREED...</option>
+                                            <option value="4e80aff0-4582-4998-861e-a46501004eca">MAINE COON</option>
+                                            <option value="fefb0212-51c2-4388-bae4-a46501004eca">PERSIAN</option>
+                                            <option value="0c34d522-80b0-4925-bad5-a46501004ec6">RAGDOLL</option>
+                                            <option value="3351e899-db10-47c6-994d-a46501004ec6">SIAMESE</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_catfood2"
+                                                id="MegaMenuCategoryFilter_catfood2"
+                                                class="MegaMenuCategoryFilter_catfood">
+                                            <option value="-">SELECT WET OR DRY...</option>
+                                            <option value="04945763-3732-4ee0-bb1a-a466009ff8f9">DRY</option>
+                                            <option value="b5142b3a-bd81-45ab-979f-a466009ff903">WET</option>
+                                        </select>
+
+                                        <a id="MegaMenuCategoryFilter_catfood" href="#" class="hl-more-button"
+                                           onclick="RedirectToProductSearch('MegaMenuCategoryFilter_catfood', 'CatFood', '/products')">FIND
+                                            PRODUCTS<span class="arrow"></span></a>
+                                    </div>
+
+
+                                    <div class="product-filters  vet">
+                                        <select name="MegaMenuCategoryFilter_veterinary0"
+                                                id="MegaMenuCategoryFilter_veterinary0"
+                                                class="MegaMenuCategoryFilter_veterinary">
+                                            <option value="-">SELECT DOG OR CAT...</option>
+                                            <option value="75d3e66c-ecc6-4d8f-bed6-a4a700f2973f">CAT</option>
+                                            <option value="d808a68d-f76e-4283-bbc8-a4a700f29744">DOG</option>
+                                            <option value="bd14098d-48b0-459f-b768-a4a700f2973f">BOTH</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_veterinary1"
+                                                id="MegaMenuCategoryFilter_veterinary1"
+                                                class="MegaMenuCategoryFilter_veterinary">
+                                            <option value="-">SELECT SPECIAL CONDITION...</option>
+                                            <option value="835fe9b7-2cac-4f8f-a8a5-a47201160ef2">APPETITE STIMULATION
+                                            </option>
+                                            <option value="e8e82993-94b2-40e8-b5c0-a47201160eee">DENTAL</option>
+                                            <option value="429aac71-f0a3-4dab-8f57-a4a7010d4be2">DIABETES SUPPORT
+                                            </option>
+                                            <option value="4d59fd6b-52b7-47f0-8692-a47201160eee">DIGESTIVE HEALTH
+                                            </option>
+                                            <option value="3e679807-bf37-42e4-8251-a47201160ee9">FOOD ELIMINATION
+                                                TRIAL
+                                            </option>
+                                            <option value="9546084e-1a9f-4cff-bf6e-a47201160ee4">GENETICS</option>
+                                            <option value="15d6564b-3c76-4ce1-a3ca-a47201160ee4">GROWTH</option>
+                                            <option value="f47cf647-5a3f-44ec-9c38-a47201160ee0">HEALTHY WEIGHT</option>
+                                            <option value="a1e29c26-d87b-41e0-9580-a47201160ee0">HEART HEALTH</option>
+                                            <option value="f7623f94-024e-4759-aff7-a47201160ee0">KIDNEY HEALTH</option>
+                                            <option value="46e24225-d2b4-4dcd-8680-a47201160edb">LIVER HEALTH</option>
+                                            <option value="10812e5e-6f46-40ae-bd5a-a47201160edb">MATURITY</option>
+                                            <option value="d7be977e-e514-4015-b276-a47201160ed6">STRESS AND ANXIETY
+                                                SUPPORT
+                                            </option>
+                                            <option value="24e4d208-2470-47f5-aa4f-a47201160ed1">URINARY HEALTH</option>
+                                            <option value="b19517fe-b290-41fa-90c1-a51a01203e64">JOINT SUPPORT</option>
+                                        </select>
+
+                                        <a id="MegaMenuCategoryFilter_veterinary" href="#" class="hl-more-button"
+                                           onclick="RedirectToProductSearch('MegaMenuCategoryFilter_veterinary', 'Veterinary', '/products')">FIND
+                                            PRODUCTS<span class="arrow"></span></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href='/products/cat'>CAT FOOD</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='/assets/images/callout_Persian_260x167.jpg' alt='Persian cats'/><h5
+                                    class="red">Have a pure-breed cat?</h5>
+                                <p>
+                                <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+                                    Check out our formulas designed to meet the specific&nbsp; needs of your breed.</p>
+                                <p><br/>
+                                </p></p>
+                                <a href='/products/cat/breed-nutrition' class='hl-more-red'>Learn More <span
+                                        class="arrow"></span>
+                                </a></div>
+                            <div class="mm-content">
+                                <div class="row">
+
+
+                                    <div class="col-sm-3">
+                                        <a href='/products/cat/kitten' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-kitten"></div>
+                                            <h5>Kitten</h5>
+                                            <h4>Birth - 1 Year</h4>
+                                            <p>
+                                            <p>A kitten's growth takes place in two distinct phases. Their nutrition
+                                                should be different during each growth phase.&nbsp;</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/cat/adult' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-adult"></div>
+                                            <h5>Adult</h5>
+                                            <h4>1 - 7 Years</h4>
+                                            <p>
+                                            <p>The adult cat's nutritional needs vary based on their age, lifestyle,
+                                                special needs, and specific breed.&nbsp;</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/cat/mature-adult' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-mature-adult"></div>
+                                            <h5>Mature Adult</h5>
+                                            <h4>7+ Years</h4>
+                                            <p>
+                                            <p>A mature adult cat's energy needs change along with their activity level
+                                                as they begin to age.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/cat/senior' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-senior"></div>
+                                            <h5>Senior</h5>
+                                            <h4>11+ Years</h4>
+                                            <p>
+                                            <p>The senior cat requires less energy than the adult cat, and needs a
+                                                palatable, nutrient dense formula.</p></p>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href='/products/dog'>DOG FOOD</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='/assets/images/callout_Bulldog_260x167.jpg' alt='Bulldogs'/><h5 class="red">
+                                Have a pure-breed dog?</h5>
+                                <p>
+                                <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+                                    Check out our formulas designed to meet the specific&nbsp; needs of your breed.</p>
+                                <p><br/>
+                                </p></p>
+                                <a href='/products/dog/breed-nutrition' class='hl-more-red'>LEARN MORE <span
+                                        class="arrow"></span>
+                                </a></div>
+                            <div class="mm-content">
+                                <div class="row">
+
+
+                                    <div class="col-sm-3">
+                                        <a href='/products/dog/x-small-and-mini' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-x-small--mini"></div>
+                                            <h5>X-Small™ & Mini™</h5>
+                                            <h4>< 8 & 9 - 22 lb</h4>
+                                            <p>
+                                            <p>Very small and small dogs have unique energy requirements and long-life
+                                                spans. Nutrition plays an important role in their overall
+                                                health.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/dog/medium' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-medium"></div>
+                                            <h5>Medium™</h5>
+                                            <h4>23 - 55 lb</h4>
+                                            <p>
+                                            <p>Energetic in nature with a wide range of physical capabilities, the
+                                                medium dog needs a balanced diet to maintain a healthy weight.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/dog/maxi' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-maxi"></div>
+                                            <h5>Maxi™</h5>
+                                            <h4>56 - 100 lb</h4>
+                                            <p>
+                                            <p>Adapted for hard-work, the large dog has unique physiological, endurance
+                                                and energy support requirements.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/dog/giant' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-giant"></div>
+                                            <h5>Giant™</h5>
+                                            <h4>> 100 lb</h4>
+                                            <p>
+                                            <p>Bred for search and rescue work, the GIANT dog's body weight puts his
+                                                joints under daily stress. His diet needs to support joint
+                                                health.</p></p>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href='/products/vet'>VET DIETS</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='/assets/images/mm-featured-cat.jpg' alt='Cat next to cat food bag'/><h5
+                                    class="red">Urinary SO<sup>®</sup></h5>
+                                <p>Our URINARY SO<sup>&reg;</sup>&nbsp;formulas nutritionally support urinary tract and
+                                    bladder health in cats and dogs.</p>
+                                <a href='/products/vet/urinary-health' class='hl-more-red'>Learn More <span
+                                        class="arrow"></span>
+                                </a></div>
+                            <div class="mm-content">
+                                <div class="row">
+
+
+                                    <div class="col-sm-3">
+                                        <a href='/products/vet/food-sensitivity' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-food-sensitivity"></div>
+                                            <h5>Food Sensitivity</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Highly palatable diets for use as a short-term elimination feeding and as
+                                                long-term nutrition for cats and dogs with food sensitivities.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/vet/urinary-health' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-urinary-health"></div>
+                                            <h5>Urinary Health</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Developed by nutritionists and veterinarians to &nbsp;nutritionally
+                                                support urinary tract and bladder health in cats and dogs.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/vet/digestive-support' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-digestive-support"></div>
+                                            <h5>Digestive Support</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Highly palatable diets formulated to help nutritionally support digestive
+                                                health in cats and dogs.</p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='/products/vet/weight-loss-support' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-weight-loss-support"></div>
+                                            <h5>Weight Loss Support</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Developed by nutritionists and veterinarians to &nbsp;nutritionally
+                                                support weight loss in cats and dogs.</p></p>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a href='/about-us/royal-canin-history'>ABOUT US</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='/assets/images/mm-featured-dog.jpg' alt='Dog next to bag of food'/><h5
+                                    class="red">Food Sensitivity</h5>
+                                <p>
+                                <p>Our formulas for food elimination trial were developed by nutritionists and
+                                    veterinarians to specifically support cats and dogs with food sensitivity. Learn
+                                    more.</p></p>
+                                <a href='/products/vet/food-sensitivity' class='hl-more-red' target='_blank'>Learn More
+                                    <span class="arrow"></span>
+                                </a></div>
+                            <div class="mm-content">
+                                <div id="about-content">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href='/about-us/royal-canin-history'>Royal Canin History</a></li>
+                                                <li><a href='/about-us/science-based-nutrition'>Science-Based
+                                                    Nutrition</a></li>
+                                                <li><a href='/about-us/careers'>Careers</a></li>
+                                                <li><a href='/about-us/testimonials'>Testimonials</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href='/about-us/why-we-are-different'>Why We Are Different</a>
+                                                </li>
+                                                <li><a href='/about-us/corporate-responsibility'>Corporate
+                                                    Responsibility</a></li>
+                                                <li><a href='/about-us/charitable-giving'>Charitable Giving</a></li>
+                                                <li><a href='/about-us/faqs' target='_blank'>Frequently Asked
+                                                    Questions</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hidden-xs toggle-search-btn search-icon"><a href="#" onclick="javascript:return false;">SEARCH</a>
+                    </li>
+                </ul>
+
+                <!--Utility nav -->
+                <ul class="nav navbar-nav navbar-right utility-nav-sm visible-xs">
+                    <li><a href='http://mypetreference.com/' target='_blank'>BLOG</a></li>
+                    <li><a href='https://my.royalcanin.com/' target='_blank'>BREEDERS AND VETS</a></li>
+                    <li><a href='https://preferencecenter.royalcanin.com/enroll' target='_blank'
+                           title='SIGN UP FOR NEWSLETTER'>SIGN UP FOR NEWSLETTER</a></li>
+                    <li><a href='/newsroom' title='NEWSROOM'>NEWSROOM</a></li>
+                    <li><a href='/about-us/careers' target='_top'>CAREERS</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+</nav>
+<!-- Begin page content -->
+<div class="cbp-spmenu-push container main-content container-sm-height" cz-shortcut-listen="true">
+
+</div>
+<!-- Footer -->
+
+
+<footer id="footer" class="cbp-spmenu-push">
+    <div class="container">
+        <div class="row hidden-xs category-links">
+            <div class="col-sm-3">
+                <div class="category-heading">About Royal Canin</div>
+                <ul>
+                    <li><a href='https://www.royalcanin.com/about-us/royal-canin-history'>About Us</a></li>
+                    <li><a href='/newsroom' title='Newsroom'>Newsroom</a></li>
+                    <li><a href='http://www.mypetreference.com/' target='_blank'>My Pet Reference</a></li>
+                    <li><a href='/about-us/careers'>Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="category-heading">Cat Food</div>
+                <ul>
+                    <li><a href='https://www.royalcanin.com/products/cat/breed-nutrition'>Feline Breed Nutrition™</a>
+                    </li>
+                    <li><a href='https://www.royalcanin.com/products/cat/health-nutrition'>Feline Health Nutrition™</a>
+                    </li>
+                    <li><a href='https://www.royalcanin.com/products/cat/wet'>Feline Health Nutrition™ Wet</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="category-heading">Dog Food</div>
+                <ul>
+                    <li><a href='https://www.royalcanin.com/products/dog'>Canine Size Nutrition</a></li>
+                    <li><a href='https://www.royalcanin.com/products/dog/breed-nutrition'>Canine Breed Health
+                        Nutrition™</a></li>
+                    <li><a href='https://www.royalcanin.com/products/dog/lifestyle'>Canine Lifestyle Health
+                        Nutrition™</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="category-heading">Vet Diets</div>
+                <ul>
+                    <li><a href='https://www.royalcanin.com/products/vet/urinary-health'>Urinary Health</a></li>
+                    <li><a href='https://www.royalcanin.com/products/vet/digestive-support'>Digestive Support</a></li>
+                    <li><a href='https://www.royalcanin.com/products/vet/weight-loss-support'>Weight Loss Support</a>
+                    </li>
+                    <li><a href='https://www.royalcanin.com/products/vet/treats'>Treats</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href='http://www.mars.com/global/about-mars/mars-pia/our-supply-chain/supplier-relationships.aspx'
+               target='_blank'>SUPPLY CHAIN TRANSPARENCY</a><a href='/about-us/privacy-statement'>PRIVACY POLICY</a><a
+                href='/about-us/terms-of-use'>TERMS OF USE</a><a href='/about-us/copyright'>COPYRIGHT</a><a
+                href='/contact-us'>CONTACT US</a><a href='https://www.royalcanin.com/about-us/faqs'>FAQ's</a></div>
+    </div>
+</footer>
+<footer id="sticky-footer" class="sticky-footer">
+    <div class="container">
+        <div class="footer-bump toggle-footer-btn"></div>
+    </div>
+    <div class="container">
+        <div id="sticky-footer-content">
+            <div class="row">
+                <div class="ftr-prod-locator">
+                    <a class="prod-locator-btn" href="/store-locator"><span>STORE LOCATOR       VET &amp; RETAIL</span></a>
+                </div>
+                <div class="ftr-soc-links">
+                    <ul class="social-nav nav navbar-nav navbar-right">
+                        <!-- Facebook -->
+                        <li class="si-facebook">
+                            <a href="https://www.facebook.com/RoyalCanin.us" class="social-icon" target="_blank"></a>
+                        </li>
+                        <!-- Instagram -->
+                        <li class="si-instagram">
+                            <a href="https://instagram.com/royalcaninus" class="social-icon" target="_blank"></a>
+                        </li>
+                        <!-- Pinterest -->
+                        <li class="si-pinterest">
+                            <a href="https://www.pinterest.com/royalcanin/" class="social-icon" target="_blank"></a>
+                        </li>
+                        <!-- Twitter -->
+                        <li class="si-twitter">
+                            <a href="https://twitter.com/royalcanin" class="social-icon" target="_blank"></a>
+                        </li>
+                        <!-- YouTube -->
+                        <li class="si-youtube">
+                            <a href="https://www.youtube.com/user/royalcaninus" class="social-icon" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr-nav-links">
+                    <ul class="footer-nav nav navbar-nav navbar-right">
+                        <li><a href='/contact-us'>CONTACT US</a></li>
+                        <li><a href='https://preferencecenter.royalcanin.com/home' target='_blank'>UPDATE PROFILE</a>
+                        </li>
+                        <li><a href='https://preferencecenter.royalcanin.com/enroll' target='_blank'>SIGN UP FOR
+                            NEWSLETTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="device-xs" class="visible-xs"></div>
+    </div>
+</footer>
+<script src="assets/index.js"></script>
+</body>
+</html>

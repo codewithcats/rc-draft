@@ -1,0 +1,13 @@
+{
+  "name": "mumu-royal-canin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tle",
+  "license": "MIT",
+  "scripts":{
+    "start": "node_modules/.bin/browser-sync start -f '.' --server '.'"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.6"
+  }
+}
