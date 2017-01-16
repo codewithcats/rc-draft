@@ -2967,7 +2967,8 @@ a.toggle-search-btn {
 	min-height: 40px;
 	font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
 	float: left;
-	width: 100%
+	width: 100%;
+	margin-top: 8px;
 }
 .social-nav>li>a,
 .social-nav>li>a:visited,
