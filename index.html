@@ -8,7 +8,7 @@
 <body>
 <nav id="header-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!--Utility nav -->
-    <div class="container-fluid hidden-xs utility-nav">
+    <div class="container-fluid hidden utility-nav">
         <div class="container">
             <ul class="utility-nav-lg nav navbar-nav navbar-right">
                 <li><a href='#' target='_blank'>BLOG</a></li>
@@ -37,7 +37,7 @@
                     <img src='/assets/images/logo.png' class='float-left' alt='Royal Canin Logo'/>
                 </a>
                 <form id="hdr-search" onsubmit="return validateEmpty(this.q)" action="/search-results"
-                      class="search-box-sm form-inline visible-xs" method="GET" role="search">
+                      class="search-box-sm form-inline visible-xs hidden" method="GET" role="search">
                     <div class="form-group input-group">
                         <input type="search" name="q" class="form-control" placeholder="Search Royal Canin..."/>
                         <span class="input-group-btn">
@@ -49,9 +49,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="navbar-collapse">
-                <div id="toggle-search" class="hidden-xs" style="display: none;">
+                <div id="toggle-search" class="hidden" style="display: none;">
                     <form id="hdr-search2" onsubmit="return validateEmpty(this.q)" action="/search-results"
-                          class="search-box-lg form-inline float-right" method="GET" role="search">
+                          class="search-box-lg form-inline hidden float-right" method="GET" role="search">
                         <div class="form-group input-group">
                             <input type="search" class="form-control" name="q" placeholder="Search Royal Canin..."/>
                             <span class="input-group-btn">
@@ -225,7 +225,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="hidden">
                         <a href='#'>CAT FOOD</a>
                         <div class="mega-menu hidden-xs">
                             <div class="mm-featured-content">
@@ -291,7 +291,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href='#'>DOG FOOD</a>
+                    <li class="hidden"><a href='#'>DOG FOOD</a>
                         <div class="mega-menu hidden-xs">
                             <div class="mm-featured-content">
                                 <img src='/assets/images/callout_Bulldog_260x167.jpg' alt='Bulldogs'/><h5 class="red">
@@ -353,7 +353,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href='#'>VET DIETS</a>
+                    <li class="hidden"><a href='#'>VET DIETS</a>
                         <div class="mega-menu hidden-xs">
                             <div class="mm-featured-content">
                                 <img src='/assets/images/mm-featured-cat.jpg' alt='Cat next to cat food bag'/><h5
@@ -410,7 +410,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="hidden">
                         <a href='#'>ABOUT US</a>
                         <div class="mega-menu hidden-xs">
                             <div class="mm-featured-content">
@@ -450,7 +450,11 @@
                         </div>
                     </li>
 
-                    <li class="hidden-xs toggle-search-btn search-icon"><a href="#" onclick="javascript:return false;">SEARCH</a>
+                    <li class="hidden hidden-xs toggle-search-btn search-icon">
+                        <a href="#" onclick="javascript:return false;">SEARCH</a>
+                    </li>
+                    <li>
+                        <a href='#'>STORE</a>
                     </li>
                 </ul>
 
@@ -472,12 +476,12 @@
 </nav>
 <!-- Begin page content -->
 <div class="cbp-spmenu-push container main-content container-sm-height" cz-shortcut-listen="true">
-PAGE CONTENT
+
 </div>
 <!-- Footer -->
 
 
-<footer id="footer" class="cbp-spmenu-push">
+<footer id="footer" class="cbp-spmenu-push hidden">
     <div class="container">
         <div class="row hidden-xs category-links">
             <div class="col-sm-3">
@@ -562,7 +566,7 @@ PAGE CONTENT
                         </li>
                     </ul>
                 </div>
-                <div class="ftr-nav-links">
+                <div class="ftr-nav-links hidden">
                     <ul class="footer-nav nav navbar-nav navbar-right">
                         <li><a href='#'>CONTACT US</a></li>
                         <li><a href='#' target='_blank'>UPDATE PROFILE</a></li>
