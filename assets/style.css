@@ -2604,8 +2604,8 @@ a.toggle-search-btn {
 	border: solid 1px #ccc;
 	background-color: #fff;
 	display: none;
-	width: 100%;
-	left: 0;
+	width: 60%;
+	right: 0;
 	top: 76px;
 	-webkit-box-shadow: 0 8px 15px 0 rgba(50, 50, 50, .75);
 	-moz-box-shadow: 0 8px 15px 0 rgba(50, 50, 50, .75);
@@ -2664,7 +2664,7 @@ a.toggle-search-btn {
 	display: inline-block
 }
 .mega-menu #product-filter-wrapper .product-filters select {
-	width: 300px
+	width: 500px
 }
 .mega-menu #about-content ul {
 	margin: 0;
