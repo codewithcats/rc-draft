@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>Royal Canin | Products</title>
-    <link rel="stylesheet" href="assets/bootstrap.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="/assets/bootstrap.css">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<nav id="header-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav id="header-nav" class="navbar navbar-default" role="navigation">
     <!--Utility nav -->
     <div class="container-fluid hidden utility-nav">
-        <div class="container">
+        <div class="container-fluid">
             <ul class="utility-nav-lg nav navbar-nav navbar-right">
                 <li><a href='#' target='_blank'>BLOG</a></li>
                 <li><a href='#' target='_blank' title='SIGN UP FOR NEWSLETTER'>SIGN UP FOR NEWSLETTER</a></li>
@@ -18,8 +18,8 @@
             </ul>
         </div>
     </div>
-    <div class="container-fluid primary-nav">
-        <div class="container">
+    <div class="primary-nav">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle toggle-menu menu-right push-body" data-toggle="collapse"
                         data-target="#navbar-collapse">
@@ -29,11 +29,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </span>
-
-                    <!--<img src="/assets/images/search-icon.gif" class="float-left hidden" alt=""/>-->
                 </button>
 
-                <a href='#' class='navbar-brand'>
+                <a href='/' class='navbar-brand'>
                     <img src='/assets/images/logo.png' class='float-left' alt='Royal Canin Logo'/>
                 </a>
                 <form id="hdr-search" onsubmit="return validateEmpty(this.q)" action="/search-results"
@@ -66,7 +64,7 @@
                 </div>
                 <ul class="primary-nav-sm nav navbar-nav navbar-right">
                     <li>
-                        <a href='#'>STORE</a>
+                        <a href='/'>STORE</a>
                     </li>
                     <li>
                         <a href='#'>PRODUCTS</a>
@@ -146,8 +144,8 @@
                                             <option value="68fddd41-22b0-4f02-9c15-a46501049610">SENIOR</option>
                                         </select>
 
-                                        <a id="MegaMenuCategoryFilter_dogfood" href="#" class="hl-more-button"
-                                           onclick="RedirectToProductSearch('MegaMenuCategoryFilter_dogfood', 'DogFood', '/products')">FIND
+                                        <a id="MegaMenuCategoryFilter_dogfood" href='/products.html'
+                                           class="hl-more-button">FIND
                                             PRODUCTS<span class="arrow"></span></a>
                                     </div>
                                     <div class="product-filters cat">
@@ -176,8 +174,8 @@
                                             <option value="b5142b3a-bd81-45ab-979f-a466009ff903">WET</option>
                                         </select>
 
-                                        <a id="MegaMenuCategoryFilter_catfood" href="#" class="hl-more-button"
-                                           onclick="RedirectToProductSearch('MegaMenuCategoryFilter_catfood', 'CatFood', '/products')">
+                                        <a id="MegaMenuCategoryFilter_catfood" href='/products.html'
+                                           class="hl-more-button">
                                             FIND PRODUCTS<span class="arrow"></span>
                                         </a>
                                     </div>
@@ -219,8 +217,8 @@
                                             <option value="b19517fe-b290-41fa-90c1-a51a01203e64">JOINT SUPPORT</option>
                                         </select>
 
-                                        <a id="MegaMenuCategoryFilter_veterinary" href="#" class="hl-more-button"
-                                           onclick="RedirectToProductSearch('MegaMenuCategoryFilter_veterinary', 'Veterinary', '/products')">
+                                        <a id="MegaMenuCategoryFilter_veterinary" href='/products.html'
+                                           class="hl-more-button">
                                             FIND PRODUCTS<span class="arrow"></span>
                                         </a>
                                     </div>
@@ -237,7 +235,8 @@
                                 <p>
                                 <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
                                     Check out our formulas designed to meet the specific&nbsp; needs of your breed.
-                                </p><p><br/>
+                                </p>
+                                <p><br/>
                                 </p></p>
                                 <a href='#' class='hl-more-red'>
                                     Learn More <span class="arrow"></span>
@@ -475,7 +474,163 @@
     </div>
 </nav>
 <!-- Begin page content -->
-<div class="cbp-spmenu-push container main-content container-sm-height" cz-shortcut-listen="true">
+<div class="cbp-spmenu-push container-fluid main-content container-sm-height" cz-shortcut-listen="true">
+
+    <!-- Begin breadcrumb -->
+    <div id="breadcrumb">
+
+<span class="bc-links hidden-xs">You are here :
+             &gt;
+        <a href='/'>Home</a>
+
+    &gt; Products
+</span>
+
+    </div>
+    <!-- End breadcrumb -->
+    <div class="intro-content row">
+        <div class="col-sm-6  col-xs-12">
+            <h1>Products</h1>
+            <h3></h3>
+        </div>
+        <div class="col-sm-6  col-xs-12 float-right">
+
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <p><br>
+            </p>
+        </div>
+    </div>
+
+    <a name="products"></a>
+    <div id="product-results">
+        <div class="product-category-selector group">
+            <a href="#" class="selector-btn-pg">CATS</a>
+            <a href="#" class="selector-btn-pg active">DOGS</a>
+            <a href="#" class="selector-btn-pg">VETS</a>
+        </div>
+        <div class="product-results-content" style="min-height: 346px;">
+            <div class="product-paging paging hidden-xs row">
+                <div class="col-sm-5 col-xs-12">
+                    <span class="result-count">Viewing 1 - 6 of 79 results</span>
+                </div>
+                <div class="col-sm-7 col-xs-12">
+
+                    <span class="generic-button active">1</span>
+                    <a class="generic-button" href="#">2</a>
+                    <a class="generic-button disabled" href="">...</a>
+                    <a class="generic-button" href="#">14</a>
+
+
+                    <a class="generic-button" href="#">NEXT</a>
+
+                    <a class="generic-button" href="#">VIEW ALL</a>
+                </div>
+            </div>
+            <div class="product-repeater">
+                <div class="row row-equal-col">
+                    <div class="col-sm-4 col-xs-12 product-detail" style="min-height: 218px;">
+                        <div class="product-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="https://secure.scene7.com/is/image/RoyalCanin/00030111420213_CF_GS1__?$Medium_Image$"></a>
+                        </div>
+                        <div class="product-title">
+                            <a href="#"><span class="brand">Royal Canin<sup>®</sup></span> <span class="product-line">Canine Health Nutrition</span>
+                                Adult Beauty canned dog food for toy and small dogs
+                                <small>5.8 oz (24 cans/case)</small>
+                            </a>
+                        </div>
+                        <div class="product-description"></div>
+                        <a href="#" class="generic-button">READ MORE</a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 product-detail" style="min-height: 218px;">
+                        <div class="product-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="https://secure.scene7.com/is/image/RoyalCanin/00030111420312_CF_GS1__?$Medium_Image$"></a>
+                        </div>
+                        <div class="product-title">
+                            <a href="#"><span class="brand">Royal Canin<sup>®</sup></span> <span class="product-line">Canine Health Nutrition</span>
+                                Adult Weight Care canned dog food for toy and small dogs
+                                <small>5.8 oz (24 cans/case)</small>
+                            </a>
+                        </div>
+                        <div class="product-description"></div>
+                        <a href="#" class="generic-button">READ MORE</a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 product-detail" style="min-height: 218px;">
+                        <div class="product-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="https://secure.scene7.com/is/image/RoyalCanin/00030111420411_CF_GS1__?$Medium_Image$"></a>
+                        </div>
+                        <div class="product-title">
+                            <a href="#"><span class="brand">Royal Canin<sup>®</sup></span> <span class="product-line">Canine Health Nutrition</span>
+                                Mature 8+ canned dog food for toy and small dogs
+                                <small>5.8 oz (24 cans/case)</small>
+                            </a>
+                        </div>
+                        <div class="product-description"></div>
+                        <a href="#" class="generic-button">READ MORE</a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 product-detail" style="min-height: 218px;">
+                        <div class="product-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="https://secure.scene7.com/is/image/RoyalCanin/00030111420114_CF_GS1__?$Medium_Image$"></a>
+                        </div>
+                        <div class="product-title">
+                            <a href="#"><span class="brand">Royal Canin<sup>®</sup></span> <span class="product-line">Canine Health Nutrition</span>
+                                Puppy canned dog food for toy and small dogs
+                                <small>5.8 oz (24 cans/case)</small>
+                            </a>
+                        </div>
+                        <div class="product-description"></div>
+                        <a href="#" class="generic-button">READ MORE</a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 product-detail" style="min-height: 218px;">
+                        <div class="product-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="https://secure.scene7.com/is/image/RoyalCanin/00030111526359_CF_GS1__?$Medium_Image$"></a>
+                        </div>
+                        <div class="product-title">
+                            <a href="#"><span class="brand">Royal Canin<sup>®</sup></span> <span class="product-line">Lifestyle Health Nutrition™</span>
+                                <span class="product-name">Sporting Life</span> Agility 4100 dry dog food
+                                <small>25 lb bag</small>
+                            </a>
+                        </div>
+                        <div class="product-description"></div>
+                        <a href="#" class="generic-button">READ MORE</a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 product-detail" style="min-height: 218px;">
+                        <div class="product-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="https://secure.scene7.com/is/image/RoyalCanin/00030111526151_CF_GS1__?$Medium_Image$"></a>
+                        </div>
+                        <div class="product-title">
+                            <a href="#"><span class="brand">Royal Canin<sup>®</sup></span> <span class="product-line">Lifestyle Health Nutrition™</span>
+                                <span class="product-name">Sporting Life</span> Trail 4300 dry dog food
+                                <small>30 lb bag</small>
+                            </a>
+                        </div>
+                        <div class="product-description"></div>
+                        <a href="#" class="generic-button">READ MORE</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-paging paging row">
+                <div class="col-sm-5 col-xs-12">
+                    <span class="result-count">Viewing 1 - 6 of 79 results</span>
+                </div>
+                <div class="col-sm-7 col-xs-12">
+                    <span class="generic-button active">1</span>
+                    <a class="generic-button" href="#">2</a>
+                    <a class="generic-button disabled" href="">...</a>
+                    <a class="generic-button" href="#">14</a>
+                    <a class="generic-button" href="#">NEXT</a>
+                    <a class="generic-button" href="#">VIEW ALL</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- Footer -->
@@ -532,8 +687,8 @@
         </div>
     </div>
 </footer>
-<footer id="sticky-footer" class="sticky-footer">
-    <div class="container">
+<footer id="sticky-footer">
+    <div class="container-fluid">
         <div id="sticky-footer-content">
             <div class="row">
                 <div class="ftr-soc-links">

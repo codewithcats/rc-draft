@@ -10652,12 +10652,11 @@ $(document).ready(function () {
 	laodBV()
 });
 
-function switchMode(mode){
-	console.log('swichMode', mode)
+function switchMode(mode) {
 	var mumuPanel = $('#mumu-panel');
-	if(mode == 'list'){
+	if (mode == 'list') {
 		mumuPanel[0].src = '/assets/images/mumu-list.png';
-	}else if(mode == 'map'){
+	} else if (mode == 'map') {
 		mumuPanel[0].src = '/assets/images/mumu-map.png';
 	}
 }
