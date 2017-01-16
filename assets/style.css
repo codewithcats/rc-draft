@@ -2010,7 +2010,7 @@ html {
 	min-height: 100%
 }
 body {
-	padding-top: 81px;
+	/*padding-top: 81px;*/
 	color: #58585b;
 	font-family: Georgia, 'Times New Roman', serif;
 	font-size: 14px;
@@ -2350,9 +2350,12 @@ sup {
 		width: 980px
 	}
 	body {
-		padding-top: 128px;
-		padding-bottom: 280px
+		/*padding-top: 81px;*/
+		/*padding-bottom: 48px*/
 	}
+    .navbar.navbar-default{
+	    margin-bottom: 0;
+    }
 }
 @media(min-width:1200px) {
 	.container {
@@ -2513,7 +2516,7 @@ a.toggle-search-btn:hover {
 	border-color: #ccc;
 	font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif
 }
-.primary-nav .container {
+.primary-nav .container-fluid {
 	position: relative;
 	height: 80px;
 	padding-bottom: 20px;
@@ -2942,9 +2945,9 @@ a.toggle-search-btn {
 		transition: all .3s ease
 	}
 }
-.sticky-footer {
-	position: fixed;
-	bottom: 0;
+#sticky-footer {
+	/*position: fixed;*/
+	/*bottom: 0;*/
 	width: 100%;
 	background-color: #e2001a;
 	z-index: 7000
@@ -2969,6 +2972,7 @@ a.toggle-search-btn {
 	float: left;
 	width: 100%;
 	margin-top: 8px;
+	padding-right: 10px;
 }
 .social-nav>li>a,
 .social-nav>li>a:visited,
@@ -3826,9 +3830,9 @@ html {
 	background-position: top -40px right 0 !important
 }
 @media screen and (min-width: 768px) {
-	body {
-		padding-bottom: 300px
-	}
+	/*body {*/
+		/*padding-bottom: 300px*/
+	/*}*/
 }
 #footer>div.container>div.category-links {
 	padding-bottom: 20px;
