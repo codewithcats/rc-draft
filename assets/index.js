@@ -10655,8 +10655,8 @@ $(document).ready(function () {
 function switchMode(mode) {
 	var mumuPanel = $('#mumu-panel');
 	if (mode == 'list') {
-		mumuPanel[0].src = '/assets/images/mumu-list.png';
+		mumuPanel[0].src = '/assets/images/mumu-list-update-font.png';
 	} else if (mode == 'map') {
-		mumuPanel[0].src = '/assets/images/mumu-map-update-pins.png';
+		mumuPanel[0].src = '/assets/images/mumu-map-update-font.png';
 	}
 }
