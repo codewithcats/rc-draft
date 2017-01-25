@@ -1,4 +1,61 @@
+@font-face {
+  font-family: 'RC';
+  src: url('fonts/DB Heavent v3.2.ttf')  format('truetype')
+}
+
+body {
+    font-family: RC, Roboto, sans-serif;
+}
+
 .navbar-default .navbar-nav>.active>a {
     background: red;
     color: white;
+}
+
+.service-img {
+    width: 100%;
+}
+
+#product-results .product-results-content .product-repeater .product-detail .product-title {
+    font-family: RC !important;
+    font-size: 1.4em;
+}
+
+#product-results .product-results-content .product-repeater .product-detail .service-img .img-responsive {
+    width: 100%;
+}
+
+.service-detail {
+    margin-top: 20px;
+}
+
+.service-info {
+    padding-left: 20px;
+    font-family: RC !important;
+}
+
+.service-info h2, .service-info p {
+    font-family: RC !important;
+}
+
+.service-info h2 {
+    font-size: 4rem;
+}
+
+.service-info p {
+    font-size: 1.5em;
+}
+
+.service-info .description {
+    margin-top: 25px;
+}
+
+.service-info .info-item i.fa,
+.service-info .info-item > span {
+    margin-right: 10px;
+}
+
+.service-info .info-item a,
+.service-info .info-item .info-data {
+    font-size: 1.5em;
 }

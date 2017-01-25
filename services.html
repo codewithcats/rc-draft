@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Royal Canin | Products</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <script src="https://use.fontawesome.com/83e8b08ace.js"></script>
+    <style>
+        .main-content {
+            border: #cccccc solid 1px;
+            border-top: none;
+            padding: 20px;
+        }
+        .main-content .main-content-intro p {
+            margin-top: 10px;
+        }
+        .main-content #breadcrumb {
+            margin-bottom: 60px;
+        }
+        .main-content #breadcrumb:empty {
+            display: none;
+        }
+        .main-content #breadcrumb .bc-links {
+            font-size: 10px;
+            color: #a7a9ab;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        .main-content #breadcrumb .bc-links > a {
+            font-size: 10px;
+            color: #a7a9ab;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        .main-content #breadcrumb .bc-links > a:hover {
+            color: #e2001a;
+        }
+        .main-content #breadcrumb #atstbx {
+            display: inline-block;
+        }
+        .main-content #breadcrumb .page-action-icons {
+            float: right;
+        }
+        .main-content #breadcrumb .page-action-icons > a {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .main-content #two-column-content {
+            border-top: #cccccc solid 1px;
+            margin-top: 20px;
+            margin-left: -20px;
+            margin-right: -20px;
+            padding: 0px 5px 0px 5px;
+            overflow: hidden;
+        }
+        .main-content #two-column-content > .row > div {
+            padding-top: 0px;
+            border-right: #cccccc solid 1px;
+        }
+        .main-content #two-column-content > .row > div:last-child {
+            border-right: none;
+        }
+        .main-content #two-column-content .two-column-main-content {
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        .main-content #two-column-content .page-content-block {
+            margin-top: 40px;
+        }
+        .main-content #two-column-content .page-content-block:first-child {
+            margin-top: 20px;
+        }
+        .main-content #two-column-content .page-content-block .img-responsive {
+            width: 100%;
+        }
+        .main-content #two-column-content .rail-callout-container {
+            color: #87888a;
+        }
+        .main-content #two-column-content .rail-callout-container > .row {
+            margin-right: -5px;
+            margin-left: -15px;
+        }
+        .main-content #two-column-content .rail-callout-container .rail-callout-content {
+            border-top: #cccccc solid 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: .857em;
+        }
+        .main-content #two-column-content .rail-callout-container .rail-callout-content:first-child {
+            border-top: none;
+        }
+        .main-content #two-column-content .rail-callout-container .rail-callout-content .callout-title {
+            font-size: 1em;
+            line-height: 1em;
+            margin-bottom: 14px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        .main-content #two-column-content .rail-callout-container .rail-callout-content .callout-headline {
+            color: #dbbe71;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .main-content #two-column-content .rail-callout-container .rail-callout-content .callout-headline:empty {
+            display: none;
+        }
+        .main-content #two-column-content .rail-callout-container .rail-callout-content .img-responsive {
+            margin-bottom: 12px;
+            width: 100%;
+        }
+        #three-column-content .right-content {
+            /*padding-left:5px;*/
+        }
+        #three-column-content .right-content #two-column-content {
+            margin-left: 0px;
+        }
+        #three-column-content .right-content #two-column-content .two-column-main-content {
+            /*padding-left: 10px;*/
+            padding-right: 10px;
+        }
+        /*Left Navigation*/
+        .toggle-nav {
+            padding: 4px 10px;
+        }
+        .toggle-nav-content {
+            display: none;
+            position: absolute;
+            top: 30px;
+            z-index: 2;
+            box-shadow: 0px 8px 15px 0px rgba(50, 50, 50, 0.75);
+            overflow: auto;
+        }
+        #left-navigation ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: #fff;
+            border: solid 1px #cccccc;
+            width: 100%;
+        }
+        #left-navigation ul li {
+            border-bottom: solid 1px #cccccc;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            font-weight: bold;
+        }
+        #left-navigation ul li a {
+            display: block;
+            color: #87888a;
+        }
+        #left-navigation ul li a.active,
+        #left-navigation ul li a:hover {
+            color: #e2001a;
+            text-decoration: none;
+        }
+        #left-navigation ul li:last-child {
+            border-bottom: none;
+        }
+        #left-navigation ul li > ul {
+            border: none;
+        }
+        #left-navigation ul li > ul li {
+            padding-left: 30px;
+            font-family: Georgia, 'Times New Roman', serif;
+            text-transform: capitalize;
+            border: none;
+            font-size: .714em;
+        }
+        #left-navigation .left-nav-xs {
+            position: relative;
+        }
+        #left-navigation .left-nav-xs > ul {
+            border-top: none;
+        }
+        /*Accordian */
+        .accordian-button {
+            display: inline-block;
+            height: 11px;
+            width: 11px;
+            position: absolute;
+            background-image: url(/Presentation/RC/Images/accordian-button-sprite.png);
+            background-repeat: no-repeat;
+            right: 10px;
+            top: 40%;
+            cursor: pointer;
+        }
+        .acc-expand-all-wrapper {
+            position: relative;
+        }
+        .acc-expand-all {
+            border-left: solid 1px #cccccc;
+            border-bottom: solid 1px #cccccc;
+            background-color: #eceded;
+            text-align: right;
+            padding: .7em 2em .5em .7em;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            color: #87888a;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .acc-group {
+            width: 100%;
+            border-left: solid 1px #cccccc;
+            border-bottom: solid 1px #cccccc;
+        }
+        .acc-group .acc-question {
+            font-weight: bold;
+            position: relative;
+        }
+        .acc-group .acc-question > p {
+            margin-bottom: 0px;
+        }
+        .ui-accordion .ui-accordion-content {
+            padding: 1em .7em;
+            overflow: visible;
+        }
+        .ui-accordion .ui-accordion-header {
+            margin: 0 0 0 0;
+            padding: .6em 2em .5em .7em;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+        }
+        .ui-accordion .ui-accordion-header:hover {
+            color: #e2001a;
+        }
+        .ui-accordion .ui-accordion-header:hover .accordian-button {
+            background-position: left top -11px;
+        }
+        .ui-accordion .ui-accordion-header.ui-accordion-header-active:hover,
+        .ui-accordion-header-active {
+            color: #e2001a;
+        }
+        .ui-accordion .ui-accordion-header.ui-accordion-header-active:hover .accordian-button,
+        .ui-accordion-header-active .accordian-button {
+            background-position: left bottom;
+        }
+        .header-bar {
+            border-top: solid 1px #cccccc;
+            border-bottom: solid 1px #cccccc;
+            background-color: #eceded;
+            background-repeat: no-repeat;
+            background-position: left 20px center;
+            padding: .5em 2.5em .5em 4em;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            text-transform: uppercase;
+            color: #87888a;
+            font-weight: bold;
+            margin: 0px -20px;
+        }
+        .intro-content {
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 767px) {
+            body {
+                border: none;
+            }
+            .main-content {
+                border: none;
+            }
+            .acc-expand-all {
+                border-right: solid 1px #cccccc;
+            }
+            .acc-group,
+            .acc-expand {
+                border-right: solid 1px #cccccc;
+            }
+            .ui-accordion .ui-accordion-header:hover {
+                color: inherit;
+            }
+            .ui-accordion .ui-accordion-header:hover .accordian-button {
+                background-position-y: top;
+            }
+            .main-content #two-column-content {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .main-content #two-column-content > .row {
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+            .main-content #two-column-content > .row > div {
+                border-right: none;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .main-content #two-column-content .two-column-main-content {
+                padding-left: 0px;
+                padding-right: 20px;
+                border-bottom: #cccccc solid 1px;
+                padding-bottom: 40px;
+            }
+            .main-content #two-column-content .two-column-main-content .page-content-block .img-responsive {
+                margin-bottom: 20px;
+            }
+        }
+        #product-results {
+            border-top: #cccccc solid 1px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        #product-results .product-category-selector .selector-btn-pg {
+            width: 33%;
+            text-align: center;
+            padding: 20px;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            float: left;
+            background-color: #eceded;
+            border-bottom: #cccccc solid 1px;
+            font-weight: bold;
+            color: #87888a;
+            border-left: #cccccc solid 1px;
+        }
+        #product-results .product-category-selector .selector-btn-pg:first-child {
+            width: 34%;
+            border-left: none;
+        }
+        #product-results .product-category-selector .selector-btn-pg:hover,
+        #product-results .product-category-selector .selector-btn-pg.active {
+            color: #e2001a;
+        }
+        #product-results .product-category-selector .selector-btn-pg.active {
+            background-color: #fff;
+            border-bottom: none;
+        }
+        #product-results .product-category-selector .selector-btn-pg:hover,
+        #product-results .product-category-selector .selector-btn-pg:visited {
+            text-decoration: none;
+        }
+        #product-results .product-results-content {
+            padding-left: 100px;
+            padding-right: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        #product-results .product-results-content #product-filter-flyout {
+            position: absolute;
+            width: 380px;
+            background-color: #d7b867;
+            z-index: 2;
+            left: 0px;
+            top: 18px;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+        }
+        #product-results .product-results-content #product-filter-flyout.shadow {
+            -webkit-box-shadow: 5px 1px 20px 2px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 5px 1px 20px 2px rgba(50, 50, 50, 0.75);
+            box-shadow: 5px 1px 20px 2px rgba(50, 50, 50, 0.75);
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header {
+            color: #fff;
+            border-bottom: #a78a3c solid 1px;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-flyout-head {
+            font-weight: bold;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-flyout-subhead {
+            color: #5c505a;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: .714em;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-left {
+            width: 320px;
+            float: left;
+            padding: 20px;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .reset-filter-btn-white {
+            color: #fff;
+            display: inline-block;
+            padding-left: 30px;
+            background-image: url(/Presentation/RC/Images/reset-filter-bg-white.jpg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            height: 25px;
+            line-height: 25px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .reset-filter-btn-white:hover {
+            text-decoration: none;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right {
+            width: 60px;
+            float: right;
+            position: relative;
+            display: block;
+            height: 110px;
+            cursor: pointer;
+            border-left: #a78a3c solid 1px;
+            background-color: #d7b867;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right .filter-btn {
+            -ms-transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+            writing-mode: lr-tb;
+            position: absolute;
+            top: 60px;
+            right: 5px;
+            font-weight: bold;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right .filter-arrow {
+            width: 7px;
+            height: 12px;
+            background-image: url(/Presentation/RC/Images/filter-arrow.jpg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 20px;
+            left: 27px;
+        }
+        #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right .filter-arrow.active {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper > ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper > ul > li {
+            border-bottom: #a78a3c solid 1px;
+            display: block;
+            padding: 9px 20px 5px 20px;
+            position: relative;
+        }
+        #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper > ul > li select {
+            width: 290px;
+        }
+        #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper > ul > li .ui-selectmenu-button {
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+        #product-results .product-results-content #product-filter-flyout .find-prod-button {
+            padding: 10px 20px;
+            position: relative;
+        }
+        #product-results .product-results-content #product-filter-flyout .find-prod-button > a {
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+        #product-results .product-results-content #product-filter-flyout .facet-selected {
+            height: 24px;
+            width: 24px;
+            display: inline-block;
+            background-image: url(/Presentation/RC/Images/facet-select-icon-sprite.jpg);
+            background-repeat: no-repeat;
+            background-position: top left;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        #product-results .product-results-content #product-filter-flyout .facet-selected.active {
+            background-position: bottom left;
+        }
+        #product-results .product-results-content .product-filters {
+            border-bottom: #cccccc solid 1px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        #product-results .product-results-content .product-filters .clear-filters-btn {
+            padding-left: 40px;
+            background-image: url(/Presentation/RC/Images/clear-filters-bg.png);
+            background-repeat: no-repeat;
+            background-position: left 10px center;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 15px;
+        }
+        #product-results .product-results-content .product-filters .filters-left {
+            float: left;
+            width: 40%;
+        }
+        #product-results .product-results-content .product-filters .filters-right {
+            float: left;
+            width: 60%;
+        }
+        #product-results .product-results-content .product-filters .filter-tab {
+            display: inline-block;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            color: #e2001a;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            border: #cccccc solid 1px;
+            background-color: #eceded;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        #product-results .product-results-content .product-filters .filter-tab .filter-close {
+            height: 12px;
+            width: 12px;
+            overflow: hidden;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        #product-results .product-results-content .product-filters .filter-tab .filter-close img {
+            vertical-align: top;
+        }
+        #product-results .product-results-content .product-paging {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #product-results .product-results-content .product-paging:last-child {
+            margin-top: 40px;
+        }
+        #product-results .product-results-content .product-paging .generic-button.active {
+            color: #e2001a;
+        }
+        #product-results .product-results-content .product-paging .generic-button.active:hover {
+            color: #fff;
+        }
+        #product-results .product-results-content .product-paging .result-count {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        #product-results .product-results-content .product-repeater {
+            padding-left: 60px;
+            padding-right: 60px;
+            /*min-height:350px;*/
+        }
+        #product-results .product-results-content .product-repeater .no-products-text {
+            margin-top: 20px;
+        }
+        #product-results .product-results-content .product-repeater .product-detail {
+            padding-bottom: 70px;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .img-responsive {
+            width: 60%;
+            margin-bottom: 20px;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .product-title {
+            text-transform: uppercase;
+            font-family: 'DIN Condensed Web', 'Arial Narrow', sans-serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .product-title a,
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:visited,
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:active,
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:focus {
+            color: #87888a;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:hover,
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:visited:hover,
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:active:hover,
+        #product-results .product-results-content .product-repeater .product-detail .product-title a:focus:hover {
+            color: #e2001a;
+            text-decoration: none;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .product-description {
+            font-size: 0.714em;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .bv-container {
+            height: 42px;
+            margin-bottom: 20px;
+        }
+        #product-results .product-results-content .product-repeater .product-detail .generic-button {
+            position: absolute;
+            bottom: 20px;
+        }
+        @media screen and (max-width: 767px) {
+            #product-results {
+                margin-top: 40px;
+            }
+            #product-results .product-results-content {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            #product-results .product-results-content .result-count {
+                font-size: 1.571em;
+                margin-bottom: 20px;
+            }
+            #product-results .product-results-content .product-repeater {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 40px;
+            }
+            #product-results .product-results-content .product-repeater .product-detail {
+                padding-bottom: 80px;
+                border-bottom: #cccccc solid 1px;
+            }
+            #product-results .product-results-content .product-repeater .product-detail .product-img {
+                text-align: center;
+            }
+            #product-results .product-results-content .product-repeater .product-detail .product-img .img-responsive {
+                display: inline-block;
+                width: 40%;
+            }
+            #product-results .product-results-content .product-repeater .product-detail .product-title {
+                font-size: 1.571em;
+            }
+            #product-results .product-results-content #product-filter-flyout {
+                width: auto;
+            }
+            #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-left {
+                width: 250px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right {
+                width: 40px;
+                position: absolute;
+                right: -40px;
+                -webkit-box-shadow: 9px 1px 15px 2px rgba(50, 50, 50, 0.75);
+                -moz-box-shadow: 9px 1px 15px 2px rgba(50, 50, 50, 0.75);
+                box-shadow: 9px 1px 15px 2px rgba(50, 50, 50, 0.75);
+            }
+            #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right.shadow {
+                -webkit-box-shadow: -1px 1px 20px 7px rgba(50, 50, 50, 0.75);
+                -moz-box-shadow: -1px 1px 20px 7px rgba(50, 50, 50, 0.75);
+                box-shadow: -1px 1px 20px 7px rgba(50, 50, 50, 0.75);
+            }
+            #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right .filter-btn {
+                right: -5px;
+            }
+            #product-results .product-results-content #product-filter-flyout .prd-flyout-header .prd-header-right .filter-arrow {
+                left: 16px;
+            }
+            #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper > ul > li select {
+                width: 210px;
+            }
+            #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper > ul > li .ui-selectmenu-button {
+                margin-left: 0px;
+            }
+            #product-results .product-results-content #product-filter-flyout #pinned-product-filter-wrapper .find-prod-button > a {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav id="header-nav" class="navbar navbar-default" role="navigation">
+    <!--Utility nav -->
+    <div class="container-fluid hidden utility-nav">
+        <div class="container-fluid">
+            <ul class="utility-nav-lg nav navbar-nav navbar-right">
+                <li><a href='#' target='_blank'>BLOG</a></li>
+                <li><a href='#' target='_blank' title='SIGN UP FOR NEWSLETTER'>SIGN UP FOR NEWSLETTER</a></li>
+                <li><a href='#' title='NEWSROOM'>NEWSROOM</a></li>
+                <li><a href='#' target='_top'>CAREERS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="primary-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggle-menu menu-right push-body" data-toggle="collapse"
+                        data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span id="nav-bars">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </span>
+                </button>
+
+                <a href='./' class='navbar-brand'>
+                    <img src='assets/images/logo.png' class='float-left' alt='Royal Canin Logo'/>
+                </a>
+                <form id="hdr-search" onsubmit="return validateEmpty(this.q)" action="/search-results"
+                      class="search-box-sm form-inline visible-xs hidden" method="GET" role="search">
+                    <div class="form-group input-group">
+                        <input type="search" name="q" class="form-control" placeholder="Search Royal Canin..."/>
+                        <span class="input-group-btn">
+                            <input type="submit" class="hl-more-button"/>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="navbar-collapse">
+                <div id="toggle-search" class="hidden" style="display: none;">
+                    <form id="hdr-search2" onsubmit="return validateEmpty(this.q)" action="/search-results"
+                          class="search-box-lg form-inline hidden float-right" method="GET" role="search">
+                        <div class="form-group input-group">
+                            <input type="search" class="form-control" name="q" placeholder="Search Royal Canin..."/>
+                            <span class="input-group-btn">
+                                <a href="#" onclick="javascript:return false;" class="btn-search-clear"></a>
+                            </span>
+                            <span class="input-group-btn">
+                                <input type="submit" class="hl-more-button"/>
+                            </span>
+                        </div>
+                    </form>
+                    <a class="toggle-search-btn float-right" href="#" onclick="javascript:return false;">CLOSE</a>
+                </div>
+                <ul class="primary-nav-sm nav navbar-nav navbar-right">
+                    <li>
+                        <a href='/'>STORE</a>
+                    </li>
+                    <li class="active">
+                        <a href='#'>PRODUCTS</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='assets/images/mm-featured-cat-dog.jpg'
+                                     alt='dog and cat next to bags of food'/>
+                                <h5 class="red">Our Products</h5>
+                                <p>
+                                    At Royal Canin, we believe the secret to providing cats and dogs with the best
+                                    nutrition lies not in any passing fad, but in well-researched scientific fact.<br/>
+                                </p>
+                                <a href='#' class='hl-more-red'>
+                                    LEARN MORE <span class="arrow"></span>
+                                </a>
+                            </div>
+                            <div class="mm-content">
+                                <div class="product-selector">
+                                    <div class="active dog">
+                                        <a href="#">DOGS</a>
+                                    </div>
+                                    <div class="cat">
+                                        <a href="#">CATS</a>
+                                    </div>
+                                    <div class="vet">
+                                        <a href="#">VETS</a>
+                                    </div>
+                                </div>
+
+                                <div id="product-filter-wrapper">
+                                    <div class="product-filters active dog">
+                                        <select name="MegaMenuCategoryFilter_dogfood0"
+                                                id="MegaMenuCategoryFilter_dogfood0"
+                                                class="MegaMenuCategoryFilter_dogfood">
+                                            <option value="-">SELECT BREED...</option>
+                                            <option value="9255ff90-3945-44fb-be01-a46500f2473c">BEAGLE</option>
+                                            <option value="f283bed5-126f-4e00-8f4f-a46500f24738">BOXER</option>
+                                            <option value="bb3d666c-83bc-45e1-b34c-a46500f24738">BULLDOG</option>
+                                            <option value="244788de-fb87-4fc5-981f-a46500f24738">CHIHUAHUA</option>
+                                            <option value="be18e746-b77f-4f5f-a8a1-a46500f24738">COCKER SPANIEL</option>
+                                            <option value="ca972774-9fbf-4635-9599-a46500f24733">DACHSHUND</option>
+                                            <option value="1897a06e-0a13-492c-8d50-a46500f24733">FRENCH BULLDOG</option>
+                                            <option value="b666dcbf-65d7-450b-9006-a46500f24733">GERMAN SHEPHERD
+                                            </option>
+                                            <option value="c5daf93f-b7b2-4a1f-a1c9-a46500f24733">GOLDEN RETRIEVER
+                                            </option>
+                                            <option value="36b0af75-90a7-48c0-9659-a46500f2472e">LABRADOR RETRIEVER
+                                            </option>
+                                            <option value="d19d14e6-79b0-4add-84e3-a46500f2472e">MINIATURE SCHNAUZER
+                                            </option>
+                                            <option value="419c19a6-e638-4ca6-aecd-a46500f2472e">POODLE</option>
+                                            <option value="935d37ad-1c09-4663-a96a-a46500f2472e">PUG</option>
+                                            <option value="84bccbe5-54eb-4ba1-9cf1-a46500f24729">ROTTWEILER</option>
+                                            <option value="b7a1ca5e-b81c-44d3-b1b0-a46500f24729">SHIH TZU</option>
+                                            <option value="49c51527-7253-4cab-878b-a46500f24729">WEST HIGHLAND WHITE
+                                                TERRIER
+                                            </option>
+                                            <option value="49ac7e88-7f4f-484c-9278-a46500f24729">YORKSHIRE TERRIER
+                                            </option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_dogfood1"
+                                                id="MegaMenuCategoryFilter_dogfood1"
+                                                class="MegaMenuCategoryFilter_dogfood">
+                                            <option value="-">SELECT SIZE...</option>
+                                            <option value="80db6f01-d141-45d0-9045-a4650102b58e">X-SMALL</option>
+                                            <option value="ec2fd01e-93b2-4746-864b-a4650102b58e">SMALL</option>
+                                            <option value="badcc482-a175-4d94-a2aa-a4650102b58e">MEDIUM</option>
+                                            <option value="35510766-6555-4b48-bf51-a4650102b58a">LARGE</option>
+                                            <option value="ef3388fc-e133-4422-82d9-a4650102b58a">GIANT</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_dogfood2"
+                                                id="MegaMenuCategoryFilter_dogfood2"
+                                                class="MegaMenuCategoryFilter_dogfood">
+                                            <option value="-">SELECT AGE...</option>
+                                            <option value="7c8b7fd8-0b44-4540-9336-a46501049615">PUPPY</option>
+                                            <option value="2f1f0aec-3389-4318-be71-a46501049615">ADULT</option>
+                                            <option value="68fddd41-22b0-4f02-9c15-a46501049610">SENIOR</option>
+                                        </select>
+
+                                        <a id="MegaMenuCategoryFilter_dogfood" href='products.html'
+                                           class="hl-more-button">FIND
+                                            PRODUCTS<span class="arrow"></span></a>
+                                    </div>
+                                    <div class="product-filters cat">
+                                        <select name="MegaMenuCategoryFilter_catfood0"
+                                                id="MegaMenuCategoryFilter_catfood0"
+                                                class="MegaMenuCategoryFilter_catfood">
+                                            <option value="-">SELECT CAT AGE...</option>
+                                            <option value="1c594f5a-0f4c-4564-b9db-a47601062e65">KITTEN</option>
+                                            <option value="165728be-024c-4a16-8aef-a47601062e6a">ADULT</option>
+                                            <option value="14570a02-461d-4fad-b1db-a47601062e5b">SENIOR</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_catfood1"
+                                                id="MegaMenuCategoryFilter_catfood1"
+                                                class="MegaMenuCategoryFilter_catfood">
+                                            <option value="-">SELECT BREED...</option>
+                                            <option value="4e80aff0-4582-4998-861e-a46501004eca">MAINE COON</option>
+                                            <option value="fefb0212-51c2-4388-bae4-a46501004eca">PERSIAN</option>
+                                            <option value="0c34d522-80b0-4925-bad5-a46501004ec6">RAGDOLL</option>
+                                            <option value="3351e899-db10-47c6-994d-a46501004ec6">SIAMESE</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_catfood2"
+                                                id="MegaMenuCategoryFilter_catfood2"
+                                                class="MegaMenuCategoryFilter_catfood">
+                                            <option value="-">SELECT WET OR DRY...</option>
+                                            <option value="04945763-3732-4ee0-bb1a-a466009ff8f9">DRY</option>
+                                            <option value="b5142b3a-bd81-45ab-979f-a466009ff903">WET</option>
+                                        </select>
+
+                                        <a id="MegaMenuCategoryFilter_catfood" href='products.html'
+                                           class="hl-more-button">
+                                            FIND PRODUCTS<span class="arrow"></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="product-filters  vet">
+                                        <select name="MegaMenuCategoryFilter_veterinary0"
+                                                id="MegaMenuCategoryFilter_veterinary0"
+                                                class="MegaMenuCategoryFilter_veterinary">
+                                            <option value="-">SELECT DOG OR CAT...</option>
+                                            <option value="75d3e66c-ecc6-4d8f-bed6-a4a700f2973f">CAT</option>
+                                            <option value="d808a68d-f76e-4283-bbc8-a4a700f29744">DOG</option>
+                                            <option value="bd14098d-48b0-459f-b768-a4a700f2973f">BOTH</option>
+                                        </select>
+                                        <select name="MegaMenuCategoryFilter_veterinary1"
+                                                id="MegaMenuCategoryFilter_veterinary1"
+                                                class="MegaMenuCategoryFilter_veterinary">
+                                            <option value="-">SELECT SPECIAL CONDITION...</option>
+                                            <option value="835fe9b7-2cac-4f8f-a8a5-a47201160ef2">APPETITE STIMULATION
+                                            </option>
+                                            <option value="e8e82993-94b2-40e8-b5c0-a47201160eee">DENTAL</option>
+                                            <option value="429aac71-f0a3-4dab-8f57-a4a7010d4be2">DIABETES SUPPORT
+                                            </option>
+                                            <option value="4d59fd6b-52b7-47f0-8692-a47201160eee">DIGESTIVE HEALTH
+                                            </option>
+                                            <option value="3e679807-bf37-42e4-8251-a47201160ee9">FOOD ELIMINATION
+                                                TRIAL
+                                            </option>
+                                            <option value="9546084e-1a9f-4cff-bf6e-a47201160ee4">GENETICS</option>
+                                            <option value="15d6564b-3c76-4ce1-a3ca-a47201160ee4">GROWTH</option>
+                                            <option value="f47cf647-5a3f-44ec-9c38-a47201160ee0">HEALTHY WEIGHT</option>
+                                            <option value="a1e29c26-d87b-41e0-9580-a47201160ee0">HEART HEALTH</option>
+                                            <option value="f7623f94-024e-4759-aff7-a47201160ee0">KIDNEY HEALTH</option>
+                                            <option value="46e24225-d2b4-4dcd-8680-a47201160edb">LIVER HEALTH</option>
+                                            <option value="10812e5e-6f46-40ae-bd5a-a47201160edb">MATURITY</option>
+                                            <option value="d7be977e-e514-4015-b276-a47201160ed6">STRESS AND ANXIETY
+                                                SUPPORT
+                                            </option>
+                                            <option value="24e4d208-2470-47f5-aa4f-a47201160ed1">URINARY HEALTH</option>
+                                            <option value="b19517fe-b290-41fa-90c1-a51a01203e64">JOINT SUPPORT</option>
+                                        </select>
+
+                                        <a id="MegaMenuCategoryFilter_veterinary" href='products.html'
+                                           class="hl-more-button">
+                                            FIND PRODUCTS<span class="arrow"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden">
+                        <a href='#'>CAT FOOD</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='assets/images/callout_Persian_260x167.jpg' alt='Persian cats'/><h5
+                                    class="red">Have a pure-breed cat?</h5>
+                                <p>
+                                <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+                                    Check out our formulas designed to meet the specific&nbsp; needs of your breed.
+                                </p>
+                                <p><br/>
+                                </p></p>
+                                <a href='#' class='hl-more-red'>
+                                    Learn More <span class="arrow"></span>
+                                </a>
+                            </div>
+                            <div class="mm-content">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-kitten"></div>
+                                            <h5>Kitten</h5>
+                                            <h4>Birth - 1 Year</h4>
+                                            <p>
+                                            <p>
+                                                A kitten's growth takes place in two distinct phases. Their nutrition
+                                                should be different during each growth phase.&nbsp;
+                                            </p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-adult"></div>
+                                            <h5>Adult</h5>
+                                            <h4>1 - 7 Years</h4>
+                                            <p>
+                                            <p>
+                                                The adult cat's nutritional needs vary based on their age, lifestyle,
+                                                special needs, and specific breed.&nbsp;
+                                            </p></p>
+                                        </a></div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-mature-adult"></div>
+                                            <h5>Mature Adult</h5>
+                                            <h4>7+ Years</h4>
+                                            <p>
+                                            <p>
+                                                A mature adult cat's energy needs change along with their activity level
+                                                as they begin to age.
+                                            </p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-senior"></div>
+                                            <h5>Senior</h5>
+                                            <h4>11+ Years</h4>
+                                            <p>
+                                            <p>The senior cat requires less energy than the adult cat, and needs a
+                                                palatable, nutrient dense formula.</p></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden"><a href='#'>DOG FOOD</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='assets/images/callout_Bulldog_260x167.jpg' alt='Bulldogs'/><h5 class="red">
+                                Have a pure-breed dog?</h5>
+                                <p>
+                                <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;">
+                                    Check out our formulas designed to meet the specific&nbsp; needs of your breed.</p>
+                                <p><br/>
+                                </p></p>
+                                <a href='#' class='hl-more-red'>
+                                    LEARN MORE <span class="arrow"></span>
+                                </a>
+                            </div>
+                            <div class="mm-content">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-x-small--mini"></div>
+                                            <h5>X-Small™ & Mini™</h5>
+                                            <h4>< 8 & 9 - 22 lb</h4>
+                                            <p>
+                                            <p>Very small and small dogs have unique energy requirements and long-life
+                                                spans. Nutrition plays an important role in their overall
+                                                health.</p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-medium"></div>
+                                            <h5>Medium™</h5>
+                                            <h4>23 - 55 lb</h4>
+                                            <p>
+                                            <p>Energetic in nature with a wide range of physical capabilities, the
+                                                medium dog needs a balanced diet to maintain a healthy weight.</p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-maxi"></div>
+                                            <h5>Maxi™</h5>
+                                            <h4>56 - 100 lb</h4>
+                                            <p>
+                                            <p>Adapted for hard-work, the large dog has unique physiological, endurance
+                                                and energy support requirements.</p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-giant"></div>
+                                            <h5>Giant™</h5>
+                                            <h4>> 100 lb</h4>
+                                            <p>
+                                            <p>Bred for search and rescue work, the GIANT dog's body weight puts his
+                                                joints under daily stress. His diet needs to support joint
+                                                health.</p></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden"><a href='#'>VET DIETS</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='assets/images/mm-featured-cat.jpg' alt='Cat next to cat food bag'/><h5
+                                    class="red">Urinary SO<sup>®</sup></h5>
+                                <p>Our URINARY SO<sup>&reg;</sup>&nbsp;formulas nutritionally support urinary tract and
+                                    bladder health in cats and dogs.</p>
+                                <a href='#' class='hl-more-red'>Learn More <span
+                                        class="arrow"></span>
+                                </a>
+                            </div>
+                            <div class="mm-content">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-food-sensitivity"></div>
+                                            <h5>Food Sensitivity</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Highly palatable diets for use as a short-term elimination feeding and as
+                                                long-term nutrition for cats and dogs with food sensitivities.</p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-urinary-health"></div>
+                                            <h5>Urinary Health</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Developed by nutritionists and veterinarians to &nbsp;nutritionally
+                                                support urinary tract and bladder health in cats and dogs.</p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-digestive-support"></div>
+                                            <h5>Digestive Support</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Highly palatable diets formulated to help nutritionally support digestive
+                                                health in cats and dogs.</p></p>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <a href='#' class='mm-col-content'>
+                                            <div class="mm-category-sprite hdr-weight-loss-support"></div>
+                                            <h5>Weight Loss Support</h5>
+                                            <h4></h4>
+                                            <p>
+                                            <p>Developed by nutritionists and veterinarians to &nbsp;nutritionally
+                                                support weight loss in cats and dogs.</p></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden">
+                        <a href='#'>ABOUT US</a>
+                        <div class="mega-menu hidden-xs">
+                            <div class="mm-featured-content">
+                                <img src='assets/images/mm-featured-dog.jpg' alt='Dog next to bag of food'/><h5
+                                    class="red">Food Sensitivity</h5>
+                                <p>
+                                <p>Our formulas for food elimination trial were developed by nutritionists and
+                                    veterinarians to specifically support cats and dogs with food sensitivity. Learn
+                                    more.</p></p>
+                                <a href='#' class='hl-more-red' target='_blank'>Learn More
+                                    <span class="arrow"></span>
+                                </a>
+                            </div>
+                            <div class="mm-content">
+                                <div id="about-content">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href='#'>Royal Canin History</a></li>
+                                                <li><a href='#'>Science-Based
+                                                    Nutrition</a></li>
+                                                <li><a href='#'>Careers</a></li>
+                                                <li><a href='#'>Testimonials</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul>
+                                                <li><a href='#'>Why We Are Different</a></li>
+                                                <li><a href='#'>Corporate Responsibility</a></li>
+                                                <li><a href='#'>Charitable Giving</a></li>
+                                                <li><a href='#' target='_blank'>Frequently Asked Questions</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hidden hidden-xs toggle-search-btn search-icon">
+                        <a href="#" onclick="javascript:return false;">SEARCH</a>
+                    </li>
+                </ul>
+
+                <!--Utility nav -->
+                <ul class="nav navbar-nav navbar-right utility-nav-sm visible-xs hidden">
+                    <li><a href='#' target='_blank'>BLOG</a></li>
+                    <li><a href='#' target='_blank'>BREEDERS AND VETS</a></li>
+                    <li><a href='#' target='_blank'
+                           title='SIGN UP FOR NEWSLETTER'>SIGN UP FOR NEWSLETTER</a></li>
+                    <li><a href='#' title='NEWSROOM'>NEWSROOM</a></li>
+                    <li><a href='#' target='_top'>CAREERS</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+</nav>
+<!-- Begin page content -->
+<div class="cbp-spmenu-push container-fluid main-content container-sm-height" cz-shortcut-listen="true">
+
+    <!-- Begin breadcrumb -->
+    <!--
+    <div id="breadcrumb">
+
+<span class="bc-links hidden-xs">You are here :
+             &gt;
+        <a href='/'>Home</a>
+
+    &gt; Products
+</span>
+
+    </div>
+    -->
+    <!-- End breadcrumb -->
+    <div class="intro-content row">
+        <div class="col-sm-6  col-xs-12">
+            <h1>STORE</h1>
+            <h3></h3>
+        </div>
+        <div class="col-sm-6  col-xs-12 float-right">
+
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <p><br>
+            </p>
+        </div>
+    </div>
+
+    <a name="products"></a>
+    <div id="product-results">
+        <div class="product-results-content" style="min-height: 346px;">
+            <div class="product-repeater">
+                <div class="row row-equal-col service-detail">
+                    <div class="col-sm-4 col-xs-12" style="min-height: 218px;">
+                        <div class="service-img">
+                            <a href="#"><img class="img-responsive"
+                                             src="assets/images/shop-1.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="service-info col-sm-8">
+                        <h2 class="title">มนูญเพ็ทช็อป</h2>
+                        <p>174/5-6 ถ.วิสุทธิ์กษัตริย์ บ้านพานถม พระนคร กรุงเทพฯ 10200</p>
+                        <div class="info-item">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <a href="https://www.facebook.com/manoon.petshop/">https://www.facebook.com/manoon.petshop/</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-header">Line ID</span>
+                            <span class="info-data">@manoon</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            <span class="info-data">086 326 8023</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                            <a href="index.html">ดูตำแหน่งในแผนที่</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <a href="https://www.manoonpetshop.co.th/">https://www.manoonpetshop.co.th/</a>
+                        </div>
+                        <p class="description" style="color: #999;">
+                            เป็นบริษัทชั้นนำในตลาดผู้จำหน่ายอาหารสัตว์ปลีกและส่งในประเทศไทย โดยมีสาขาให้บริการกับลูกค้ากลุ่มผู้รักสัตว์ถึง 16 สาขา     และมีระบบลูกค้าสมาชิกกว่า 30,000 ราย   พร้อมด้วยบริการระบบการขายสินค้าแบบ  E-commerce เพื่อให้ลูกค้าไม่ว่าอยู่ส่วนใดของประเทศไทยเข้ามาเลือกชมสินค้าของเราผ่านทาง www.manoonpetshop.co.th นอกจากนี้เรายังมีบริการระบบ call center ที่ลูกค้าสามารถสั่งซื้อสินค้าและทางเรายินดีให้บริการจัดส่งสินค้าให้กับลูกค้าถึงบ้าน   (Home delivery)   เรามุ่งมั่นทำธุรกิจด้วยความจริงใจกับลูกค้าและคู่ค้า และดูและพนักงานภายในองค์กรให้มีความมั่นคง    สร้างความแข็งแรงภายในองค์กรของเราเพื่อการพัฒนา  มนูญเพ็ทช็อป  ของเราให้ก้าวไปอย่างไม่หยุดนิ่ง   ซึ่งจากประสบการณ์ด้านการจำหน่ายอาหารสัตว์ทั้งปลีกและส่งกว่า 20 ปี ทำให้เราเป็นผู้นำทางด้านตลาดอาหารสัตว์เลี้ยงในประเทศไทย    เราประกอบธุรกิจด้วยความซื้อสัตย์  และจริงใจต่อลูกค้า    พร้อมกับพยายามพัฒนาถึงรูปแบบการให้บริการที่ทันสมัยอยู่ตลอดเวลา   เพื่อตอบโจทย์ของลูกค้าได้อย่างตรงใจ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Footer -->
+
+
+<footer id="footer" class="cbp-spmenu-push hidden">
+    <div class="container">
+        <div class="row hidden-xs category-links">
+            <div class="col-sm-3">
+                <div class="category-heading">About Royal Canin</div>
+                <ul>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#' title='Newsroom'>Newsroom</a></li>
+                    <li><a href='#' target='_blank'>My Pet Reference</a></li>
+                    <li><a href='#'>Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="category-heading">Cat Food</div>
+                <ul>
+                    <li><a href='#'>Feline Breed Nutrition™</a>
+                    </li>
+                    <li><a href='#'>Feline Health Nutrition™</a>
+                    </li>
+                    <li><a href='#'>Feline Health Nutrition™ Wet</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="category-heading">Dog Food</div>
+                <ul>
+                    <li><a href='#'>Canine Size Nutrition</a></li>
+                    <li><a href='#'>Canine Breed Health
+                        Nutrition™</a></li>
+                    <li><a href='#'>Canine Lifestyle Health
+                        Nutrition™</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="category-heading">Vet Diets</div>
+                <ul>
+                    <li><a href='#'>Urinary Health</a></li>
+                    <li><a href='#'>Digestive Support</a></li>
+                    <li><a href='#'>Weight Loss Support</a>
+                    </li>
+                    <li><a href='#'>Treats</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href='#' target='_blank'>SUPPLY CHAIN TRANSPARENCY</a>
+            <a href='#'>PRIVACY POLICY</a>
+            <a href='#'>TERMS OF USE</a><a href='#'>COPYRIGHT</a>
+            <a href='#'>CONTACT US</a><a href='#'>FAQ's</a>
+        </div>
+    </div>
+</footer>
+<footer id="sticky-footer" style="visibility: hidden;">
+    <div class="container-fluid">
+        <div id="sticky-footer-content">
+            <div class="row">
+                <div class="ftr-soc-links">
+                    <ul class="social-nav nav navbar-nav navbar-right">
+                        <!-- Facebook -->
+                        <li class="si-facebook">
+                            <a href='#' class="social-icon" target="_blank"></a>
+                        </li>
+                        <!-- Instagram -->
+                        <li class="si-instagram">
+                            <a href='#' class="social-icon" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ftr-nav-links hidden">
+                    <ul class="footer-nav nav navbar-nav navbar-right">
+                        <li><a href='#'>CONTACT US</a></li>
+                        <li><a href='#' target='_blank'>UPDATE PROFILE</a></li>
+                        <li><a href='#' target='_blank'>SIGN UP FOR NEWSLETTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="device-xs" class="visible-xs"></div>
+    </div>
+</footer>
+<script src="assets/index.js"></script>
+</body>
+</html>
