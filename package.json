@@ -4,10 +4,13 @@
   "main": "index.js",
   "author": "Tle",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
     "start": "node_modules/.bin/browser-sync start -f '.' --server '.'"
   },
   "dependencies": {
     "browser-sync": "^2.18.6"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
   }
 }

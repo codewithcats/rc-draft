@@ -1,0 +1,4 @@
+.navbar-default .navbar-nav>.active>a {
+    background: red;
+    color: white;
+}
