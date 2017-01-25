@@ -10657,6 +10657,6 @@ function switchMode(mode) {
 	if (mode == 'list') {
 		mumuPanel[0].src = '/assets/images/mumu-list.png';
 	} else if (mode == 'map') {
-		mumuPanel[0].src = '/assets/images/mumu-map.png';
+		mumuPanel[0].src = '/assets/images/mumu-map-update-pins.png';
 	}
 }
